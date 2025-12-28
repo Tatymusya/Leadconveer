@@ -1,0 +1,5 @@
+.gradient-text {
+    background-image: var(--linear-gradient-bg-highlighting);
+    background-clip: text;
+    color: transparent
+}

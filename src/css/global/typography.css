@@ -1,0 +1,58 @@
+.base {
+  font-size: 100%;
+
+  .base__body {
+      font-size: clamp(var(--base-font-size-min),var(--adaptive-base-font-size),var(--base-font-size-max));
+      line-height: clamp(var(--base-font-size-min),var(--adaptive-base-font-size),var(--base-font-size-max));
+      font-family: var(--base-font-family, sans-serif);
+      color: var(--base-font-color);
+  }
+}
+
+.title-lv1 {
+
+  @container (inline-size >= 20rem) {
+    font-size: var(--title-lv1-font-size-min);
+    line-height: var(--title-lv1-font-size-min);
+  }
+
+  @container (inline-size >= 32.5rem) {
+    font-size: var(--adaptive-title-lv1-font-size);
+    line-height: var(--title-lv1-line-height-xl);
+  }
+
+  font-family: var(--title-font-family, sans-serif);
+  font-weight: 800;
+}
+
+.title-lv2 {
+
+  @container (inline-size >= 20rem) {
+    font-size: var(--title-lv2-font-size-min);
+    line-height: var(--title-lv2-line-height-min);
+  }
+
+  @container (inline-size >= 32.5rem) {
+    font-size: var(--title-lv2-font-size);
+    line-height: var(--title-lv2-line-height);
+  }
+
+  font-family: var(--title-font-family, sans-serif);
+  font-weight: 800;
+}
+
+.title-lv3 {
+
+  @container (inline-size >= 20rem) {
+    font-size: var(--title-lv3-font-size-min);
+    line-height: var(--title-lv3-line-height-min);
+  }
+
+  @container (inline-size >= 32.5rem) {
+    font-size: var(--title-lv3-font-size);
+    line-height: var(--title-lv3-line-height);
+  }
+
+  font-family: var(--title-lv3-font-family);
+  font-weight: normal;
+}

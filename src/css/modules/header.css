@@ -1,0 +1,27 @@
+.header {
+    background-color: var(--white-smoke-color);
+
+    .header__container {
+        position: relative;
+        background-color: var(--thunder-color);
+        border-end-start-radius: var(--border-radius-block);
+        border-end-end-radius: var(--border-radius-block);
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 5.125rem;
+
+        @container (inline-size >= 20rem) {
+            padding-inline: var(--offset-section-x-max1004);
+        }
+
+        @container (inline-size >= 62.75rem) {
+            padding-inline: var(--offset-section-x-max1920);
+        }
+
+        @container (inline-size >= 120rem) {
+            inline-size: var(--max-width-container);
+            margin-inline: auto;
+        }
+    }
+
+}

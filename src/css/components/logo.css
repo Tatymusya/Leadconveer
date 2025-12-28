@@ -1,0 +1,16 @@
+.logo {
+    display: flex;
+    align-items: center;
+    position: absolute;
+
+    @container (inline-size >= 20rem) {
+        inset-inline-start: var(--offset-section-x-max1004);
+    }
+
+    @container (inline-size >= 62.75rem) {
+        inset-inline-start: var(--offset-section-x-max1920);
+    }
+    
+    inset-block-start: 50%;
+    transform: translateY(-50%);
+}

@@ -1,0 +1,42 @@
+.button {
+    transition: color  0.1s linear, background-color  0.1s linear;
+    color: var(--white-color);
+    font-weight: 500;
+    cursor: pointer;
+
+    &.button--block {
+        min-block-size: 4.5rem;
+        inline-size: 100%;
+        border-radius: var(--border-radius-element);
+    }
+
+    &.button--default {
+        border: none;
+        text-transform: uppercase;
+
+        .button__svg {
+            pointer-events: none;
+            
+            .button__svg__use {
+                fill: var(--white-color);
+            }
+        }
+
+        &:enabled {
+            background-color: var(--base-bg-button-enabled);
+        }
+
+        &:hover {
+            background-color: var(--base-bg-button-hovered);
+        }
+
+        &:active {
+            background-color: var(--base-bg-button-activated);
+        }
+
+        &:disabled {
+            background-color: var(--base-bg-button-disabled);
+        }
+    }
+
+}

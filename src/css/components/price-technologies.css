@@ -1,0 +1,180 @@
+.price-technologies {
+
+    .price-technologies__container__elem {
+        position: relative;
+        padding-block-end: 9.5rem;
+    }
+
+    .price-technologies__text {
+        text-align: center;
+        margin-block: 0;
+        max-inline-size: 67rem;
+        margin-inline: auto;
+
+        @container (inline-size >= 20rem) {
+            margin-block-end: 2rem;
+        }
+
+        @container (inline-size >= 62.75rem) {
+            margin-block-end: 3rem;
+        }
+
+        @container (inline-size >= 120rem) {
+            margin-block-end: 3rem;
+        }
+    }
+
+    .price-technologies__tariff-title {
+        display: inline-flex;
+        position: relative;
+        justify-content: center;
+        align-items: center;
+        padding-inline: 1.25rem;
+        padding-block: 0.625rem;
+        border-radius: var(--border-radius-element);
+        margin-block-end: 2.375rem;
+
+        &::after {
+            content: '';
+            inline-size: 3.5rem;
+            block-size: 3.5rem;
+            background-size: contain;
+            position: absolute;
+            inset-block-start: 0;
+            inset-inline-end: 0;
+
+            @container (inline-size >= 20rem) {
+                transform: translate(1.8rem, -1.5rem);
+            }
+
+            @container (inline-size >= 62.75rem) {
+                transform: translate(4.7rem, -0.3rem);
+            }
+
+            @container (inline-size >= 120rem) {
+                transform: translate(4.7rem, -0.3rem);
+            }
+
+        }
+
+        &.price-technologies__tariff-title--dark {
+            border: 1px solid var(--thunder-color);
+
+            &::after {
+                background-image: image-set(
+                    "../../images/assets/price-technologies/bg-price-technologies-star-black1x.png" 1x,
+                    "../../images/assets/price-technologies/bg-price-technologies-star-black2x.png" 2x
+                );
+
+            }
+        }
+
+        &.price-technologies__tariff-title--light {
+            border: 1px solid var(--white-color);
+
+            &::after {
+                background-image: image-set(
+                    "../../images/assets/price-technologies/bg-price-technologies-star-white1x.png" 1x,
+                    "../../images/assets/price-technologies/bg-price-technologies-star-white2x.png" 2x
+                );
+
+            }
+        }
+    }
+
+    .price-technologies__price-by-count {
+        display: block;
+        font-size: 2.25rem;
+        line-height: 2.625rem;
+        font-weight: bold;
+        font-family: var(--title-font-family);
+        margin-block-end: 2rem;
+
+        &.price-technologies__price-by-count--light {
+            color: var(--white-color);
+        }
+
+        &.price-technologies__price-by-count--dark {
+            color: var(--thunder-color);
+        }
+    }
+
+    .price-technologies__button {
+        position: absolute;
+        inset-block-end: 2.5rem;
+
+        @container (inline-size >= 20rem) {
+            max-inline-size: calc(100% - (1.2rem * 2));
+        }
+
+        @container (inline-size >= 62.75rem) {
+            max-inline-size: calc(100% - (2.5rem * 2));
+        }
+    }
+
+    .price-technologies__list {
+        padding-inline-start: 0;
+
+        line-height: 1.3;
+
+        &.price-technologies__list--dark {
+            color: var(--thunder-color);
+
+            .price-technologies__list__item::before {
+                background-image: image-set(
+                    "../../images/assets/price-technologies/bg-price-technologies-check-black1x.png" 1x,
+                    "../../images/assets/price-technologies/bg-price-technologies-check-black2x.png" 2x
+                );
+            }
+          
+        }
+
+        &.price-technologies__list--light {
+            color: var(--white-color);
+
+            .price-technologies__list__item::before {
+                background-image: image-set(
+                    "../../images/assets/price-technologies/bg-price-technologies-check-white1x.png" 1x,
+                    "../../images/assets/price-technologies/bg-price-technologies-check-white2x.png" 2x
+                );
+            }
+           
+        }
+        
+        .price-technologies__list__item {
+            position: relative;
+            padding-inline-start: 1.9rem;
+
+            &:not(&:last-child) {
+                padding-block-end: 1rem;
+            }
+
+            &::before {
+                display: inline-block;
+                position: absolute;
+                content: '';
+                inline-size: 24px;
+                block-size: 16px;
+                background-size: contain;
+                background-repeat: no-repeat;
+                inset-inline-start: 0;
+                inset-block-start: 0.5rem;
+            }
+        }
+
+    }
+
+    .price-technologies__descr {
+        margin-block: 0;
+        margin-block-end: 2.83rem;
+        line-height: 1.2;
+
+        &.price-technologies__descr--light {
+            color: var(--white-color);
+        }
+
+        &.price-technologies__descr--dark {
+            color: var(--thunder-color);
+        }
+    }
+}

@@ -1,0 +1,45 @@
+.social-contacts {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 0.75rem;
+
+    .social-contacts__social {
+        inline-size: 2.5rem;
+        block-size: 2.5rem;
+
+        &.social-contacts__social--telegram {
+            background-image: image-set(
+                "../../images/icons/telegram_icon1x.png" 1x,
+                "../../images/icons/telegram_icon2x.png" 2x
+            );
+        }
+
+        &.social-contacts__social--whatsapp {
+            background-image: image-set(
+                "../../images/icons/whatsapp_icon1x.png" 1x,
+                "../../images/icons/whatsapp_icon2x.png" 2x
+            );
+        }
+    }
+    .social-contacts__tel {
+        @container (inline-size >= 20rem) {
+            inline-size: 2.5rem;
+            block-size: 2.5rem;
+            text-indent: -109999px;
+            background-image: image-set(
+                "../../images/icons/telephone_icon1x.png" 1x,
+                "../../images/icons/telephone_icon2x.png" 2x
+            );
+            background-size: contain;
+        }
+
+        @container (inline-size >= 105rem) {
+            inline-size: max-content;
+            block-size: auto;
+            font-size: 2rem;
+            text-indent: 0;
+            background-image: none;
+        }
+    }
+}

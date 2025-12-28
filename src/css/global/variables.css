@@ -1,0 +1,143 @@
+:root {
+  /* BASE COLOR */
+  /*#FFFFFF*/
+  --white-color: hsl(0, 0%, 100%);
+
+  /*#FF6600*/
+  --blaze-orange-color: hsl(24, 100%, 50%);
+
+  /*#FF9832*/
+  --deep-saffron-color: hsl(30, 100%, 60%);
+
+  /*#F26659*/
+  --bean-red-color: hsl(5, 85%, 65%);
+
+  /*#CD3400*/
+  --mahogany-color: hsl(15, 100%, 40%);
+
+  /*#F06177*/
+  --light-carmine-pink-color: hsl(351, 83%, 66%);
+
+  /*#E55D97*/
+  --raspberry-pink-color: hsl(334, 72%, 63%);
+
+  /*#CA46D2*/
+  --pinkish-purple-color: hsl(297, 61%, 55%);
+
+  /*#8D13F9*/
+  --artyclick-purple-color: hsl(272, 95%, 53%);
+
+  /*#2d2d2d*/
+  --thunder-color: hsl(0, 0%, 18%);
+
+  /*#3F3F3F*/
+  --charcoal-grey-color: hsl(0, 0%, 25%);
+
+  /*#808080*/
+  --granite-color: hsl(0, 0%, 50%);
+
+  /*#F6F6F6*/
+  --white-smoke-color: hsl(0, 0%, 96%);
+
+  /*#C0C0C0*/
+  --silver-sand-color: hsl(0, 0%, 75%);
+
+  /*#DBDBDB*/
+  --gainsboro-color: hsl(0, 0%, 86%);
+
+  /*bg gradient*/
+  --linear-gradient-bg-highlighting: linear-gradient(
+    to right,
+    var(--blaze-orange-color),
+    var(--bean-red-color) 27%,
+    var(--light-carmine-pink-color) 37%,
+    var(--raspberry-pink-color) 48%,
+    var(--pinkish-purple-color) 71%,
+    var(--artyclick-purple-color) 100%
+  );
+
+  /* FONT */
+
+  --font-reduction-coefficient: 0.412636vw;
+
+  /* font text */
+  --base-font-size-max: 1.5rem;
+  --base-font-size-min: 1rem; 
+  --adaptive-base-font-size: calc(var(--base-font-size-min) + var(--font-reduction-coefficient));
+
+  --base-font-family: "Inter";
+  --base-font-line-height: 1.15;
+  --base-font-color: var(--granite-color);
+
+  /* font title */
+  --title-font-family: "Montserrat";
+
+  --title-lv1-font-size-min: 3.4rem;
+  --title-lv1-font-size-min-adaptive: 4.505rem;
+  --adaptive-title-lv1-font-size: calc(var(--title-lv1-font-size-min-adaptive) + var(--font-reduction-coefficient));
+
+  --title-lv1-font-size-xl: 5rem;
+  --title-lv1-line-height-xl: 5rem;
+
+  --title-lv2-font-size-min: 1.85rem;
+  --title-lv2-line-height-min: 2rem;
+  --title-lv2-font-size: 3rem;
+  --title-lv2-line-height: 3.25rem;
+
+  --title-lv3-font-size-min: 1.45rem;
+  --title-lv3-line-height-min: 1.65rem;
+  --title-lv3-font-size: 2rem;
+  --title-lv3-line-height: 2rem;
+  --title-lv3-font-family: "Inter";
+
+  /* BORDER */
+  --border-radius-block: 1.875rem;
+  --border-radius-element: 1.25rem;
+
+  /* COLOR LINK STATES */
+  --base-color-a-link: var(--granite-color);
+  --base-color-a-hover: var(--thunder-color);
+  --base-color-a-visited: var(--silver-sand-color);
+  --base-color-a-focus: ;
+  --base-color-a-active: var(--blaze-orange-color);
+
+  /* COLOR LINK STATES ON A DARK BACKGROUND */
+  --dark-bg-color-a-link: var(--white-color);
+  --dark-bg-color-a-hover: var(--silver-sand-color);
+  --dark-bg-color-a-visited: var(--charcoal-grey-color);
+  --dark-bg-color-a-focus: ;
+  --dark-bg-color-a-active: var(--blaze-orange-color);
+
+  /* COLOR GREY LINK STATES ON A DARK BACKGROUND */
+  --dark-bg-grey-color-a-link: var(--granite-color);
+  --dark-bg-grey-color-a-hover: var(--silver-sand-color);
+  --dark-bg-grey-color-a-visited: var(--charcoal-grey-color);
+  --dark-bg-grey-color-a-focus: ;
+  --dark-bg-grey-color-a-active: var(--blaze-orange-color);
+
+  /* BG BUTTON STATES */
+  --base-bg-button-enabled: var(--blaze-orange-color);
+  --base-bg-button-disabled: var(--silver-sand-color);
+  --base-bg-button-activated: var(--mahogany-color);
+  --base-bg-button-hovered: var(--deep-saffron-color);
+  --base-bg-button-focused: ;
+
+    /* BG SLIDER BULLETS STATES */
+  --base-bg-bullet-enabled: var(--gainsboro-color);
+  --base-bg-bullet-disabled: var(--granite-color);
+  --base-bg-bullet-activated: var(--blaze-orange-color);
+  --base-bg-bullet-hovered: var(--silver-sand-color);
+  --base-bg-bullet-focused: ;
+
+  /* MAX WIDTH CONTAINER */
+  --max-width-container: 120rem;
+
+  /* OFFSET SECTION */
+  --offset-section-x-max1920: 4.375rem;
+  --offset-section-x-max1004: 2.1875rem;
+  --offset-section-y-max1920: 7.5rem;
+  --offset-section-y-max1004: 4rem;
+
+    /* OFFSET BLOCK */
+  --offset-block-x-max1920: 1.25rem;
+}

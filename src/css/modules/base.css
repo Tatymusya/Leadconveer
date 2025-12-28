@@ -1,0 +1,26 @@
+.base {
+    background-color: var(--white-color);
+    min-inline-size: 20rem;
+    -webkit-text-size-adjust: 100%;
+    scroll-behavior: smooth;
+
+    .base__body {
+        container-type: inline-size;
+    }
+
+    .base__container {
+        display: grid;
+
+        @container (inline-size <= 48rem) {
+            grid-template-rows: 5.125rem auto 36.5rem;
+        }
+
+        @container (inline-size > 48rem) {
+            grid-template-rows: 5.125rem auto 19.5rem;
+        }
+
+        grid-template-columns: 1fr;
+        min-block-size: 100dvh;
+        justify-content: center;
+    }
+}

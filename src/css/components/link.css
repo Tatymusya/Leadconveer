@@ -1,0 +1,52 @@
+.link {
+    text-decoration: none;
+    transition: color  0.1s linear;
+
+    &.link--default:link {
+        color: var(--base-color-a-link);
+    }
+
+    &.link--default:hover {
+        color: var(--base-color-a-hover);
+    }
+
+    &.link--default:active {
+        color: var(--base-color-a-active);
+    }
+
+    &.link--default:visited {
+        color: var(--base-color-a-visited);
+    }
+
+    &.link--dark-bg:link {
+        color: var(--dark-bg-color-a-link);
+    }
+
+    &.link--dark-bg:hover {
+        color: var(--dark-bg-color-a-hover);
+    }
+
+    &.link--dark-bg:active {
+        color: var(--dark-bg-color-a-active);
+    }
+
+    &.link--dark-bg:visited {
+        color: var(--dark-bg-color-a-visited);
+    }
+
+    &.link-grey--dark-bg:link {
+        color: var(--dark-bg-grey-color-a-link);
+    }
+
+    &.link-grey--dark-bg:hover {
+        color: var(--dark-bg-grey-color-a-hover);
+    }
+
+    &.link-grey--dark-bg:active {
+        color: var(--dark-bg-grey-color-a-active);
+    }
+
+    &.link-grey--dark-bg:visited {
+        color: var(--dark-bg-grey-color-a-visited);
+    }
+}

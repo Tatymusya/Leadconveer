@@ -1,0 +1,23 @@
+.title-default {
+    margin-block: 0;
+
+    .title-default__sel {
+        color: var(--blaze-orange-color);
+
+        &.title-default__sel--display-block {
+            display: block;
+        }
+    }
+
+    &.title-default--align-c {
+        text-align: center;
+    }
+
+    &.title-default--dark-color {
+        color: var(--thunder-color);
+    }
+
+    &.title-default--light-color {
+        color: var(--white-color);
+    }
+}
