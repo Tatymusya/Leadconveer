@@ -2,6 +2,7 @@
     display: flex;
     align-items: center;
     position: absolute;
+    z-index: 2;
 
     @container (inline-size >= 20rem) {
         inset-inline-start: var(--offset-section-x-max1004);
