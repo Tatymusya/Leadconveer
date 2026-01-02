@@ -98,36 +98,42 @@
   --base-color-a-link: var(--granite-color);
   --base-color-a-hover: var(--thunder-color);
   --base-color-a-visited: var(--silver-sand-color);
-  --base-color-a-focus: ;
   --base-color-a-active: var(--blaze-orange-color);
+  --base-color-a-focus-outline: var(--thunder-color);
+  --base-color-a-focus-border: var(--white-color);
 
   /* COLOR LINK STATES ON A DARK BACKGROUND */
   --dark-bg-color-a-link: var(--white-color);
   --dark-bg-color-a-hover: var(--silver-sand-color);
   --dark-bg-color-a-visited: var(--charcoal-grey-color);
-  --dark-bg-color-a-focus: ;
   --dark-bg-color-a-active: var(--blaze-orange-color);
+  --dark-bg-color-a-focus-outline: var(--thunder-color);
+  --dark-bg-color-a-focus-border: var(--white-color);
 
   /* COLOR GREY LINK STATES ON A DARK BACKGROUND */
   --dark-bg-grey-color-a-link: var(--granite-color);
   --dark-bg-grey-color-a-hover: var(--silver-sand-color);
   --dark-bg-grey-color-a-visited: var(--charcoal-grey-color);
-  --dark-bg-grey-color-a-focus: ;
   --dark-bg-grey-color-a-active: var(--blaze-orange-color);
+  --dark-bg-grey-color-a-focus-outline: var(--thunder-color);
+  --dark-bg-grey-color-a-focus-border: var(--white-color);
+
 
   /* BG BUTTON STATES */
   --base-bg-button-enabled: var(--blaze-orange-color);
   --base-bg-button-disabled: var(--silver-sand-color);
   --base-bg-button-activated: var(--mahogany-color);
   --base-bg-button-hovered: var(--deep-saffron-color);
-  --base-bg-button-focused: ;
+  --base-bg-button-focused-outline: var(--thunder-color);
+  --base-bg-button-focused-border: var(--white-color);
 
     /* BG SLIDER BULLETS STATES */
   --base-bg-bullet-enabled: var(--gainsboro-color);
   --base-bg-bullet-disabled: var(--granite-color);
   --base-bg-bullet-activated: var(--blaze-orange-color);
   --base-bg-bullet-hovered: var(--silver-sand-color);
-  --base-bg-bullet-focused: ;
+  --base-bg-bullet-focused-outline: var(--thunder-color);
+  --base-bg-bullet-focused-border: var(--white-color);
 
   /* MAX WIDTH CONTAINER */
   --max-width-container: 120rem;

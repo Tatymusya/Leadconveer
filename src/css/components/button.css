@@ -39,4 +39,11 @@
         }
     }
 
+    &:focus {
+        outline: 0.125rem solid var(--base-bg-button-focused-outline);
+        border: 0.0625rem solid var(--base-bg-button-focused-border);
+        outline-style: double;
+        outline-offset: -0.1875rem;
+    }
+
 }

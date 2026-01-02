@@ -49,4 +49,18 @@
     &.link-grey--dark-bg:visited {
         color: var(--dark-bg-grey-color-a-visited);
     }
+
+    &.link--default:focus {
+        outline: 0.125rem solid var(--base-color-a-focus-outline);
+        border: 0.0625rem solid var(--base-color-a-focus-border);
+        outline-style: double;
+        outline-offset: -0.1875rem;
+    }
+
+    &.link-grey--dark-bg:focus {
+        outline: 0.125rem solid var(--dark-bg-grey-color-a-focus-outline);
+        border: 0.0625rem solid var(--dark-bg-grey-color-a-focus-border);
+        outline-style: double;
+        outline-offset: -0.1875rem;
+    }
 }
