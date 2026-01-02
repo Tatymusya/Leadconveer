@@ -2,7 +2,13 @@
     background-color: var(--white-smoke-color);
 
     .header__container {
-        position: relative;
+        position: fixed;
+        z-index: 1;
+        max-inline-size: 120rem;
+        inline-size: 100cqw;
+
+        inset-inline-start: 50%;
+        transform: translateX(-50%);
         background-color: var(--thunder-color);
         border-end-start-radius: var(--border-radius-block);
         border-end-end-radius: var(--border-radius-block);
@@ -20,7 +26,6 @@
 
         @container (inline-size >= 120rem) {
             inline-size: var(--max-width-container);
-            margin-inline: auto;
         }
     }
 
