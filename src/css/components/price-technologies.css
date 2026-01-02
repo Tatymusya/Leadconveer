@@ -3,6 +3,72 @@
     .price-technologies__container__elem {
         position: relative;
         padding-block-end: 9.5rem;
+
+        &.price-technologies__container__elem--light--bg {
+            .price-technologies__tariff-title {
+                border: 1px solid var(--thunder-color);
+
+                &::after {
+                    background-image: image-set(
+                        "../../images/assets/price-technologies/bg-price-technologies-star-black1x.png" 1x,
+                        "../../images/assets/price-technologies/bg-price-technologies-star-black2x.png" 2x
+                    );
+
+                }
+            }
+
+            .price-technologies__price-by-count {
+                color: var(--thunder-color);
+            }
+
+            .price-technologies__descr {
+                color: var(--thunder-color);
+            }
+
+            .price-technologies__list {
+                color: var(--thunder-color);
+
+                .price-technologies__list__item::before {
+                    background-image: image-set(
+                        "../../images/assets/price-technologies/bg-price-technologies-check-black1x.png" 1x,
+                        "../../images/assets/price-technologies/bg-price-technologies-check-black2x.png" 2x
+                    );
+                }
+            }
+        }
+
+        &.price-technologies__container__elem--dark--bg {
+            .price-technologies__tariff-title {
+                border: 1px solid var(--white-color);
+
+                &::after {
+                    background-image: image-set(
+                        "../../images/assets/price-technologies/bg-price-technologies-star-white1x.png" 1x,
+                        "../../images/assets/price-technologies/bg-price-technologies-star-white2x.png" 2x
+                    );
+
+                }
+            }
+
+            .price-technologies__price-by-count {
+                color: var(--white-color);
+            }
+
+            .price-technologies__descr {
+                color: var(--white-color);
+            }
+
+            .price-technologies__list {
+                color: var(--white-color);
+
+                .price-technologies__list__item::before {
+                    background-image: image-set(
+                        "../../images/assets/price-technologies/bg-price-technologies-check-white1x.png" 1x,
+                        "../../images/assets/price-technologies/bg-price-technologies-check-white2x.png" 2x
+                    );
+                }
+            }
+        }
     }
 
     .price-technologies__text {
@@ -57,29 +123,6 @@
 
         }
 
-        &.price-technologies__tariff-title--dark {
-            border: 1px solid var(--thunder-color);
-
-            &::after {
-                background-image: image-set(
-                    "../../images/assets/price-technologies/bg-price-technologies-star-black1x.png" 1x,
-                    "../../images/assets/price-technologies/bg-price-technologies-star-black2x.png" 2x
-                );
-
-            }
-        }
-
-        &.price-technologies__tariff-title--light {
-            border: 1px solid var(--white-color);
-
-            &::after {
-                background-image: image-set(
-                    "../../images/assets/price-technologies/bg-price-technologies-star-white1x.png" 1x,
-                    "../../images/assets/price-technologies/bg-price-technologies-star-white2x.png" 2x
-                );
-
-            }
-        }
     }
 
     .price-technologies__price-by-count {
@@ -89,14 +132,6 @@
         font-weight: bold;
         font-family: var(--title-font-family);
         margin-block-end: 2rem;
-
-        &.price-technologies__price-by-count--light {
-            color: var(--white-color);
-        }
-
-        &.price-technologies__price-by-count--dark {
-            color: var(--thunder-color);
-        }
     }
 
     .price-technologies__button {
@@ -114,32 +149,7 @@
 
     .price-technologies__list {
         padding-inline-start: 0;
-
         line-height: 1.3;
-
-        &.price-technologies__list--dark {
-            color: var(--thunder-color);
-
-            .price-technologies__list__item::before {
-                background-image: image-set(
-                    "../../images/assets/price-technologies/bg-price-technologies-check-black1x.png" 1x,
-                    "../../images/assets/price-technologies/bg-price-technologies-check-black2x.png" 2x
-                );
-            }
-          
-        }
-
-        &.price-technologies__list--light {
-            color: var(--white-color);
-
-            .price-technologies__list__item::before {
-                background-image: image-set(
-                    "../../images/assets/price-technologies/bg-price-technologies-check-white1x.png" 1x,
-                    "../../images/assets/price-technologies/bg-price-technologies-check-white2x.png" 2x
-                );
-            }
-           
-        }
         
         .price-technologies__list__item {
             position: relative;
@@ -168,13 +178,5 @@
         margin-block: 0;
         margin-block-end: 2.83rem;
         line-height: 1.2;
-
-        &.price-technologies__descr--light {
-            color: var(--white-color);
-        }
-
-        &.price-technologies__descr--dark {
-            color: var(--thunder-color);
-        }
     }
 }
